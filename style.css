@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global Tags */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(35, 35, 85);
+}
+
+span {
+  font-size: 0.9rem;
+  color: #757373;
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: rgb(24, 24, 49);
+}
+
+/* Navigation */
+nav{
+  position: fixed;
+  width: 100% ;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgba(0,0, 0, 0.15);
+  z-index: 999;
+    
+}
+nav img{
+  width: 150px;
+  cursor: pointer;
+}
+nav .Navigation{
+  display: flex;
+}
+
+#menu-btn{
+  width: 20px;
+  height: 30px;
+  display: none;
+}
+
+#menu-close{
+  display: none;
+}
+
+nav .Navigation ul{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+
+}
+
+nav .Navigation ul li{
+  list-style: none;
+  margin-left:30px ;
+  
+}
+
+nav .Navigation ul li a{
+  text-decoration: none;
+  color: rgb(21, 21, 100);
+  font-size:16px ;
+  font-weight:500;
+  transition: 0.3s ease;
+  
+
+
+}
+
+nav .Navigation ul li a:hover {
+  color: blue;
+} 
+
+/* Home */
+
+#home{
+  background-image:linear-gradient(rgba(9,5,53,0.3),rgba(5,4,46,0.7)),url("images/back.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+
+}
+
+#home h2{
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+#home p {
+  width: 50%;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+
+#home .btn{
+  margin-top: 30px;
+}
+
+#home a{
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius:5px ;
+
+}
+
+#home a.blue{
+  color: #fff;
+  background-color: rgb(21, 21, 100);
+  transition: 0.3s ease;
+
+}
+
+#home a.blue:hover{
+  color: rgb(21, 21, 100);
+  background-color:#fff;
+
+}
+
+#home a.yellow{
+  color: #fff;
+  background-color: rgb(233, 164, 36);
+  transition: 0.3s ease;
+
+}
+
+#home a.yellow:hover{
+  color: rgb(21, 21, 100);
+  background-color:#fff;
+
+}
+/* features */
+
+#features{
+  padding: 5vw 8vw 0 8vw;
+  text-align: center;
+
+}
+
+#features .fea-base{
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  grid-gap: 1rem;
+}
+
+#features .fea-box{
+  background-color: #f9f9ff;
+  text-align: start ;
+}
+
+#features .fea-box i{
+  font-size: 2.3rem;
+  color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(46, 46, 59);
+  padding:13px 0 7px 0;
+}
+
+#features .fea-box p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(70, 70, 87);
+ 
+}
+
+
+
+/* course */
+
+#syllabus{
+  padding: 8vw 8vw 8vw 8vw;
+  text-align: center;
+}
+
+
+
+#syllabus .syllabuses{
+  text-align:start;
+  background-color:#f9f9ff ;
+  height: 100%;
+
+}
+#syllabus .syllabus-box{
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  grid-gap: 1rem;
+}
+
+#syllabus .syllabuses img{
+  width: 100%;
+  height:60% ;
+  background-size: cover;
+  background-position: center;
+} 
+
+#syllabus .syllabuses .details{
+  padding: 15px 15px 0 15px;
+}
+
+/* registration */
+#Registration{
+  padding: 6vw 8vw 6vw 8vw ;
+  background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url("images/signup.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#Registration .reminder h1{
+  color: #fff;
+}
+
+#Registration .form{
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,255,0.37);
+
+}
+
+#Registration .form input{
+  margin: 15px 0;
+  padding: 15px 10px;
+  border: 1px solid rgb(84, 48, 241);
+  outline: none;
+}
+
+#Registration .form input::placeholder{
+  color: #413c3c;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+#Registration .form .btn{
+  margin-top: 20px;
+}
+
+#Registration .form a.yellow{
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius:5px ;
+  color: #fff;
+  background-color: rgb(233, 164, 36);
+  transition: 0.3s ease;
+
+}
+
+
+#Registration .form a.yellow:hover{
+  color: rgb(21, 21, 100);
+  background-color:#fff;
+
+}
+
+
+/* experts */
+
+#experts{
+  padding: 8vw 8vw 8vw 8vw;
+
+  text-align: center;
+}
+
+#experts .expert-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+
+#experts .expert-box .profile{
+  background: #fafaf1;
+  padding: 30px 10px;
+}
+
+.pro-links{
+  margin-top: 10px;
+}
+
+.pro-links i{
+  padding: 10px 13px;
+  border: 1px solid rgb(21, 21, 100);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pro-links i:hover{
+  color: #fff;
+  background:rgb(21, 21, 100);
+  border: 1px solid rgb(21, 21, 100);
+  cursor: pointer;
+}
+
+
+
+
+
+/* footer */
+footer {
+  padding: 8vw;
+  background-color: #101c32;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer .footer-col{
+  padding-bottom: 40px;
+
+}
+footer h3{
+  color: rgb(241, 240, 245);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+footer li{
+  list-style: none;
+  color: #7b838a;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+footer li:hover{
+  color: rgb(241, 240, 245);
+}
+
+footer p{
+  color: #7b838a;
+}
+
+footer .subscribe{
+  margin-top: 20px;
+}
+
+footer input{
+  width: 220px;
+  padding: 15px 12px;
+  background: #334f6c;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+footer .subscribe a{
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 12px 15px;
+  background-color: #fff;
+  font-weight: 600;
+
+}
+
+footer .subscribe a.yellow{
+  color: #fff;
+  background:#fdc93b;
+  transition: 0.3s ease;
+
+}
+
+footer .subscribe a.yellow:hover{
+  color: rgb(21, 21, 100);
+  background-color:#fff;
+
+}
+
+footer .copyright{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+footer .copyright p{
+  color: #fff;
+}
+
+footer .copyright .pro-links{
+  margin-top: 0px;
+}
+
+footer .copyright .pro-links i{
+  background-color: #5f7185;
+  color: #fff;
+}
+
+footer .copyright .pro-links i:hover{
+  color:#fdc93b;
+  background: #2c2c2c;
+}
+
+
+/* About */
+
+/* Blog */
+
+/* Course_inner */
+
+/* contact */
+
+/* responsive */
+
+@media (max-width: 769px) {
+  nav{
+    padding: 15px 20px;
+  }
+  nav img{
+    width: 130px;
+  }
+  #menu-btn{
+    display: initial;
+  }
+  
+  #menu-close{
+    display: initial;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 30px 0 20px 20px;
+  }
+  nav .Navigation ul {
+    position:absolute;
+    top: 0;
+    right: -220px;
+    width: 220px ;
+    background:rgba(17,29,104,0.45);
+    height: 100vh;
+    backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(255,255,255, 0.18);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.3s ease;
+  }
+  nav .Navigation ul.active{
+    right: 0;
+  }
+  nav .Navigation ul li{
+    padding: 20px 0 20px 40px;
+    margin-left: 0;
+  }
+  nav .Navigation ul li a{
+    color: #fff;
+  }
+  #home{
+    padding-top: 0px;
+  }
+  #home p{
+    width: 90%;
+  }
+  #features{
+    padding: 8vw 4vw 0 4vw;
+  }
+  #syllabus{
+    padding: 8vw 4vw 0 4vw;
+  }
+  #Registration{
+    margin-top: 8vw;
+    padding: 6vw 4vw 6vw 4vw;
+  }
+
+  #experts{
+    padding: 8vw 8vw 4vw 8vw;
+  }
+  footer .copyright .pro-links{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 475px) {
+}
